@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+
+/* Base style*/
+body{
+    font-family: "Sawarabi Mincho", serif,"Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.section{
+    padding:30px 15px;
+}
+.section.section-secounday{
+    padding: 30px 15px;
+    background: #efefef;
+}
+.section.section-third{
+    padding: 30px 15px;
+}
+.section-headline{
+    text-align: center;
+    font-size:40px;
+    font-weight:bold;
+    margin: 0 0 40px;
+}
+
+/*hero*/
+.hero{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.hero > strong{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #efefef;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.hero > video{
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    height: 110%;
+}
+
+
+/*About style*/
+.About{
+    margin: 0;
+    display: flex;
+}
+
+.About-caption{
+    padding-left: 15px;
+}
+.About-headline{
+    margin: 50px 20px;
+    font-size: 25px;
+}
+.About-description {
+    margin: 50px 20px;
+    font-size: 20px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-border {
+  margin-bottom: 12px;
+  padding: 10px;
+
+  -webkit-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  border: 2px solid #000;
+  background-image: -webkit-repeating-linear-gradient(
+    135deg,
+    #000,
+    #000 1px,
+    transparent 2px,
+    transparent 5px
+  );
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #000,
+    #000 1px,
+    transparent 2px,
+    transparent 5px
+  );
+  background-size: 7px 7px;
+
+  -webkit-backface-visibility: hidden;
+
+  backface-visibility: hidden;
+}
+
+a.btn-border span {
+  position: relative;
+
+  display: block;
+
+  padding: 1.25rem 3rem;
+
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+a.btn-border:hover {
+  margin: 4px 4px 12px;
+  padding: 6px;
+}
+
+
+/*corporate identity*/
+.grid {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.grid-item{list-style: none;
+}
+.grid-col-2 >.grid-item{
+    width: 50%;
+}
+.grid-col-3 >.grid-item{
+    width: 33.3%;
+}
+.grid-col-4 >.grid-item{
+    width: 25%;
+}
+.Corporate-identity{
+    text-align: center;
+    padding: 0 15px;
+}
+.Corporate-identity-headline{
+    font-weight: bold;
+    margin-bottom: 0 0 20px;
+}
+.Corporate-identity-img{
+    margin: 0 0 20px;
+}
+.Corporate-identity-description{
+    margin: 0;
+    text-align: left;
+}
+
+
+/*Servise*/
+.Service{
+    display: flex;
+}
+.Service-fice{
+    width: 700px;
+    margin: 0;
+    padding: 0 100px;
+    overflow: hidden;
+    position: relative;
+}
+.item{
+    display: flex;
+    text-align: center;
+}
+.item-img{
+    margin: 0px;
+    padding: 10px;
+}
+.item-detail{
+        margin: 50px 20px;
+        font-size: 20px;
+        font-weight:bold;
+        color: #333;
+        background:#cdbba7;
+}
+.price{
+    margin: 50px 20px;
+    font-size: 20px;
+    font-weight:bold;
+    color: #333;
+    background-color:#cdbba7;
+}
+.email{
+    margin: 50px 20px;
+    font-size: 20px;
+    font-weight:bold;
+    color: #333;
+    background-color:#cdbba7;
+}
+
+/*Map*/
+.footer{
+    background-color: #333;
+    color: #efefef;
+}
+.footer-map{
+    margin: 0;
+    padding: 40px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-map > iframe{
+    width: 60%;
+}
+.footer-mapinfo{
+    width: 40%;
+    padding: 15px;
+}
+.footer-maplogo{
+    font-size: 25px;
+    font-weight: bold;
+}
+.footer-mapaddress{
+    font-style: normal
+}
+.footer-mapaddress > a{
+    color: #efefef;
+}
+.footer-line{
+    border-color: #444;
+}
+.footer-copy{
+    display: block;
+    text-align: center;
+    padding: 10px
+}
